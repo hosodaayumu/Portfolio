@@ -1,0 +1,66 @@
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.hobby-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hobby-item {
+    background-color: #fdfdfd;
+    border-left: 6px solid #007BFF;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.hobby-item:hover {
+    transform: translateY(-4px);
+}
+
+.hobby-title {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hobby-desc {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+a.back-link {
+    display: inline-block;
+    margin-top: 2em;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+a.back-link:hover {
+    text-decoration: underline;
+}
