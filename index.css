@@ -11,7 +11,7 @@ body {
 
 /* === ヘッダー === */
 header {
-    background-image: url('./素材/aruhu.png');
+    background-image: url('image/aruhu.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
