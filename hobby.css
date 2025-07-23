@@ -6,12 +6,12 @@ body {
     color: #333;
     margin: 0;
     padding: 40px 20px;
-    display: flex;
-    justify-content: center;
 }
 
 .container {
     max-width: 800px;
+    margin: 0 auto;
+    /* 中央寄せ */
     background-color: #fff;
     padding: 40px;
     border-radius: 12px;
@@ -84,4 +84,9 @@ a.back-link:hover {
     max-width: 90%;
     max-height: 90%;
     border-radius: 12px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
 }
