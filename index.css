@@ -41,7 +41,7 @@ section {
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    scroll-margin-top: 200px;
+    scroll-margin-top: 100px;
 }
 
 footer {
@@ -215,5 +215,6 @@ p {
     section {
         margin: 1rem 1rem;
         padding: 1rem;
+        scroll-margin-top: 200px;
     }
 }
