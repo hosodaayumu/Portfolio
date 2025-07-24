@@ -7,8 +7,9 @@ function openModal(imgElement) {
     modalImg.src = imgElement.src;
   }
 
-  function closeModal() {
-    document.getElementById("modal").style.display = "none";
-  }
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
 
+  
 

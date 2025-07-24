@@ -1,15 +1,14 @@
 @charset "utf-8";
 
-/* === 全体設定 === */
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     background-color: #9b87ff;
     color: #333;
+    line-height: 1.6;
 }
 
-/* === ヘッダー === */
 header {
     background-image: url('image/aruhu.png');
     background-size: cover;
@@ -20,7 +19,6 @@ header {
     text-align: center;
 }
 
-/* === ナビゲーション === */
 nav {
     background-color: #fff;
     text-align: center;
@@ -36,7 +34,6 @@ nav a {
     color: #333;
 }
 
-/* === セクション === */
 section {
     max-width: 815px;
     margin: 2rem auto;
@@ -47,7 +44,6 @@ section {
     scroll-margin-top: 100px;
 }
 
-/* === フッター === */
 footer {
     text-align: center;
     padding: 2rem;
@@ -55,13 +51,41 @@ footer {
     margin-top: 2rem;
 }
 
-/* === スキルセクション === */
+/* 共通マージン統一 */
+h1,
+h2,
+h3 {
+    margin: 0 0 1rem 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
+/* タイトル画像付き */
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 1rem;
+}
+
+.section-title img {
+    height: 1.25em;
+}
+
+/* メイントップタイトル */
+.main-title {
+    font-size: 70px;
+    margin-bottom: 1rem;
+}
+
+/* スキル関連 */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: flex-start;
-    /* 左寄せ */
     padding-left: 4rem;
 }
 
@@ -72,6 +96,7 @@ footer {
     border-radius: 6px;
     background-color: #fff;
     transition: transform 0.3s ease;
+    margin-bottom: 1rem;
 }
 
 .skill-box:hover {
@@ -88,43 +113,19 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-/* === 制作実績レイアウト（旧：works-content） === */
-.works-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.works-content ul {
-    flex: 1;
-}
-
-.works-image {
-    flex: 1;
-    max-width: 300px;
-}
-
-.works-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* === 制作実績ギャラリー（新しく追加された画像ギャラリー） === */
+/* 制作実績ギャラリー */
 .works-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1rem;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .work-item {
     width: 200px;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .work-item img {
@@ -135,7 +136,7 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* === モーダル（画像拡大） === */
+/* モーダル */
 .modal {
     display: none;
     position: fixed;
@@ -165,4 +166,54 @@ footer {
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* スマホ用（幅768px以下） */
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 36px;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .skills-container {
+        padding-left: 1rem;
+        justify-content: center;
+    }
+
+    .skill-box {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .works-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-item {
+        width: 90%;
+    }
+
+    .section-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-title img {
+        height: 2em;
+    }
+
+    header {
+        padding: 1rem;
+        background-position: center top;
+    }
+
+    section {
+        margin: 1rem 1rem;
+        padding: 1rem;
+    }
 }
